@@ -13,7 +13,7 @@ def drawObject(x: float, y: float):
 
 def moveTop():
     print('Moving top')
-    for x in range(0, 780, 5):
+    for x in range(20, 780, 5):
         drawObject(x, 550)
     pass
 
@@ -27,10 +27,15 @@ def moveRight():
 
 def moveBottom():
     print('Moving bottom')
-    for x in range(780, 20, -5):
+    for x in range(400, 20, -5):
         drawObject(x, 90)
     pass
 
+def moveBottom2():
+    print('Moving bottom2')
+    for x in range(780, 400, -5):
+        drawObject(x, 90)
+    pass
 
 def moveLeft():
     print('Moving left')
@@ -40,10 +45,12 @@ def moveLeft():
 
 def moveRect():
     print('Move Rect')
-    moveTop()
-    moveRight()
+    x,y=400,90
     moveBottom()
     moveLeft()
+    moveTop()
+    moveRight()
+    moveBottom2()
     pass
 
 def moveTri():

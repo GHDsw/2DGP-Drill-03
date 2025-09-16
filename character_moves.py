@@ -53,8 +53,21 @@ def moveRect():
     moveBottom2()
     pass
 
+
+def moveLeftT():
+    pass
+
+
+def moveRightT():
+    pass
+
+
 def moveTri():
     print('Move Tri')
+    moveBottom()
+    moveLeftT()
+    moveRightT()
+    moveBottom2()
     pass
 
 def moveCircle():

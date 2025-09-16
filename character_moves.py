@@ -2,8 +2,18 @@ from pico2d import *
 
 open_canvas()
 
+boy = load_image('character.png')
+grass = load_image('grass.png')
+
+def drawObject(x: float, y: float):
+    clear_canvas_now()
+    grass.draw_now(400, 30)
+    boy.draw_now(x, y)
+    delay(0.01)
+
 def moveTop():
     print('Moving top')
+    drawObject(400, 90)
     pass
 
 
@@ -39,6 +49,7 @@ def moveCircle():
 
 while True:
     moveCircle()
+    moveTri()
     moveRect()
     break
     pass

@@ -29,6 +29,10 @@ def moveRect():
     moveLeft()
     pass
 
+def moveTri():
+    print('Move Tri')
+    pass
+
 def moveCircle():
     print('Move Circle')
     pass

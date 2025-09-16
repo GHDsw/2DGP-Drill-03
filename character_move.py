@@ -6,18 +6,24 @@ boy = load_image('character.png')
 
 # fill here
 def moveTop():
+    print('Moving top')
+    for x in range(0, 800, 5):
+        drawBoy(x,550)
     pass
 
 
 def moveRight():
+    print('Moving right')
     pass
 
 
 def moveBottom():
+    print('Moving bottom')
     pass
 
 
 def moveLeft():
+    print('Moving left')
     pass
 
 
@@ -38,14 +44,18 @@ def moveCircle():
         y = r * math.sin(math.radians(deg))+300
         clear_canvas_now()
 
-        clear_canvas_now()
-        boy.draw_now(x,y)
-        delay(0.01)
+        drawBoy(x, y)
     pass
 
 
+def drawBoy(x: float, y: float):
+    clear_canvas_now()
+    boy.draw_now(x, y)
+    delay(0.01)
+
+
 while True:
-    moveCircle()
+    # moveCircle()
     moveRect()
     break
     pass

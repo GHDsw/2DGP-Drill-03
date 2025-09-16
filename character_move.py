@@ -4,10 +4,12 @@ open_canvas()
 
 # fill here
 def moveRect():
+    print ("moveRect")
     pass
 
 
 def moveCircle():
+    print ("moveCircle")
     pass
 
 

@@ -53,20 +53,22 @@ def moveRect():
     moveBottom2()
     pass
 
-
-def moveLeftT():
+def moveRightT():
+    for x in range(20, 400, 5):
+        drawObject(x, x+90-20)
     pass
 
-
-def moveRightT():
+def moveLeftT():
+    for x in range(400, 780, 5):
+        drawObject(x, 890-x-20)
     pass
 
 
 def moveTri():
     print('Move Tri')
     moveBottom()
-    moveLeftT()
     moveRightT()
+    moveLeftT()
     moveBottom2()
     pass
 
@@ -75,7 +77,7 @@ def moveCircle():
     pass
 
 while True:
-    moveRect()
+    #moveRect()
     moveTri()
     moveCircle()
     break

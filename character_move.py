@@ -5,8 +5,28 @@ open_canvas()
 boy = load_image('character.png')
 
 # fill here
+def moveTop():
+    pass
+
+
+def moveRight():
+    pass
+
+
+def moveBottom():
+    pass
+
+
+def moveLeft():
+    pass
+
+
 def moveRect():
     print ("moveRect")
+    moveTop()
+    moveRight()
+    moveBottom()
+    moveLeft()
     pass
 
 

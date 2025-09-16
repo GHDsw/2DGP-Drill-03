@@ -73,12 +73,18 @@ def moveTri():
     pass
 
 def moveCircle():
-    print('Move Circle')
+    r = (600-180)/2
+    for deg in range(-90, 360-90):
+        x = r * math.cos(math.radians(deg)) + 400
+        y = r * math.sin(math.radians(deg)) + 300
+        clear_canvas_now()
+
+        drawObject(x, y)
     pass
 
 while True:
     #moveRect()
-    moveTri()
+    #moveTri()
     moveCircle()
     break
     pass

@@ -83,8 +83,8 @@ def moveCircle():
     pass
 
 while True:
-    #moveRect()
-    #moveTri()
+    moveRect()
+    moveTri()
     moveCircle()
     break
     pass

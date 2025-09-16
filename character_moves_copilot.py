@@ -64,6 +64,5 @@ while True:
     moveRect()
     moveTri()
     moveCircle()
-
 close_canvas()
 

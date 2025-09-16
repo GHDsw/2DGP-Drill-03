@@ -78,7 +78,6 @@ def moveCircle():
         x = r * math.cos(math.radians(deg)) + 400
         y = r * math.sin(math.radians(deg)) + 300
         clear_canvas_now()
-
         drawObject(x, y)
     pass
 
